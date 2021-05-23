@@ -7,7 +7,7 @@ public class Input {
 }  
 Для уобства пример показан в несколько строк. Пример ниже:  
   Xml  
-  <Input>  
+  '<Input>'  
       <K>10</K>  
     <Sums>   
       <decimal>1.01</decimal>  
