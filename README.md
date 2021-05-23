@@ -1,25 +1,25 @@
 # Data_serialization/Сериализация данных.
 
 Первой строкой на вход участнику подается тип сериализации Json или Xml. Следующей строкой посылается сериализованный объект.  
-public class Input {
-  public int K { get; set; }
-  public decimal[] Sums { get; set; } public int[] Muls { get; set; }
-}
-Для уобства пример показан в несколько строк. Пример ниже:
-  Xml
-  <Input>
-      <K>10</K>
-    <Sums> 
-      <decimal>1.01</decimal>
-      <decimal>2.02</decimal>
-    </Sums>
-    <Muls>
-      <int>1</int>
-      <int>4</int>
-    </Muls>
-  </Input>
-Json
-  {"K":10,"Sums":[1.01,2.02],"Muls":[1,4]}
+public class Input {  
+  public int K { get; set; }  
+  public decimal[] Sums { get; set; } public int[] Muls { get; set; }  
+}  
+Для уобства пример показан в несколько строк. Пример ниже:  
+  Xml  
+  <Input>  
+      <K>10</K>  
+    <Sums>   
+      <decimal>1.01</decimal>  
+      <decimal>2.02</decimal>  
+    </Sums>  
+    <Muls>  
+      <int>1</int>  
+      <int>4</int>  
+    </Muls>  
+  </Input>  
+Json  
+  {"K":10,"Sums":[1.01,2.02],"Muls":[1,4]}  
 На выход участник должен послать сериализованный объект ответа.
 public class Output {
   public decimal SumResult { get; set; } public int MulResult { get; set; }
